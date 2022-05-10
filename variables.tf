@@ -1,13 +1,9 @@
-variable "path" {
-	type = list(object({
-		module = string
-	}))
-	default = [
-		{
-			module = "./"
-		}]
-}
 variable "hello" {
-	type = string
-	default = "print('Hello!')"
+  type = string
+  default = "'Hello'"
+}
+
+variable "hello" {
+  type = string
+  default = "hello.py"
 }
